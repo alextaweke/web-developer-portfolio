@@ -24,7 +24,7 @@ src/
 ## 📦 Installation
 ```bash
 # Clone repository
-git clone https://github.com/your-username/web-developer-portfolio.git
+git clone https://github.com/alextaweke/web-developer-portfolio.git
 
 # Navigate to project folder
 cd web-developer-portfolio
