@@ -26,6 +26,14 @@ const Navbar: React.FC<NavbarProps> = ({ name, darkMode, setDarkMode }) => (
           </a>
         ))}
 
+        {/* Admin link */}
+        <a
+          href="/admin"
+          className="text-white hover:text-yellow-300 transition font-semibold"
+        >
+          Admin
+        </a>
+
         {/* Resume button */}
         <a
           href="/resume.pdf"

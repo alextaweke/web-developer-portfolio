@@ -14,20 +14,25 @@ const Admin = () => {
   const [loggedIn, setLoggedIn] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const handleLogin = async () => {
+    if (!password) return;
+    setLoading(true);
     try {
-      const res = await axios.get(
+      const res = await axios.get<Message[]>(
         `${import.meta.env.VITE_API_URL}/api/messages`,
         {
           headers: { Authorization: `Bearer ${password}` },
         }
       );
-      setMessages(res.data as Message[]);
+      setMessages(res.data);
       setLoggedIn(true);
       setError("");
     } catch {
       setError("Invalid password or failed to fetch messages");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -46,9 +51,14 @@ const Admin = () => {
             />
             <button
               onClick={handleLogin}
-              className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition"
+              disabled={!password}
+              className={`w-full py-3 rounded-lg transition ${
+                password
+                  ? "bg-blue-600 text-white hover:bg-blue-700"
+                  : "bg-gray-400 text-gray-200 cursor-not-allowed"
+              }`}
             >
-              Login
+              {loading ? "Loading..." : "Login"}
             </button>
             {error && <p className="text-red-500 mt-3 text-center">{error}</p>}
           </div>
@@ -57,6 +67,16 @@ const Admin = () => {
             <h2 className="text-3xl font-bold mb-6 text-center">
               📩 Contact Messages
             </h2>
+            <button
+              onClick={() => {
+                setLoggedIn(false);
+                setPassword("");
+                setMessages([]);
+              }}
+              className="mb-4 bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+            >
+              Logout
+            </button>
             <div className="space-y-4">
               {messages.map((msg) => (
                 <div
