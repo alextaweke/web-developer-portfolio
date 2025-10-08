@@ -2,14 +2,19 @@
 FROM node:20-alpine AS build
 WORKDIR /app
 
-# Copy package.json first and install dependencies
+# Copy package.json and package-lock.json first
 COPY package*.json ./
+
+# Install dependencies
 RUN npm install
 
-# Copy rest of the files
+# Copy the rest of the frontend files
 COPY . .
 
-# Build
+# Fix permissions for local binaries
+RUN chmod +x ./node_modules/.bin/*
+
+# Build the frontend
 RUN npm run build
 
 # Stage 2: Serve with Nginx
