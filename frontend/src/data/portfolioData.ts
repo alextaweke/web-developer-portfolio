@@ -1,0 +1,83 @@
+export const portfolioData = {
+  name: "Alemayehu Taweke",
+  title: "Full-Stack Web Developer",
+  description:
+    "I specialize in building modern, scalable, and user-friendly web applications using React, TypeScript, NestJS, Django, and Express.",
+  github: "https://github.com/alextaweke",
+  linkedin: "https://linkedin.com/in/alemayehu-taweke-6b6a6331b",
+  email: "alextaweke@gmail.com",
+  skills: [
+    {
+      name: "Frontend & Backend",
+      skills: ["React", "TypeScript", "NestJS", "Django", "Express", "Node.js"],
+      icon: "💻",
+      color: "blue",
+    },
+    {
+      name: "Databases & Tools",
+      skills: ["PostgreSQL", "Tailwind CSS", "Git", "Docker", "AWS"],
+      icon: "🛠️",
+      color: "green",
+    },
+  ],
+  completedProjects: [
+    {
+      title: "Portfolio Website",
+      description:
+        "A personal portfolio built with React + TypeScript + Tailwind.",
+      link: "https://alextaweke.com",
+      github: "https://github.com/alextaweke/web-developer-portfolio.git",
+      image: "alextaweke/images/projects/alexo.png",
+    },
+    {
+      title: "Internet Cafe Management System",
+      description:
+        "Manage users, session time, and billing in an internet cafe environment.",
+      link: "https://alextaweke-internetcafe.com",
+      github: "https://github.com/alextaweke/Internet-Cafe.git",
+      image: "alextaweke/images/projects/internet.jfif",
+    },
+    {
+      title: "Student Management System",
+      description:
+        "Manage student records, attendance, and academic performance efficiently.",
+      link: "https://alextaweke-students.com",
+      github: "https://github.com/alextaweke/Student-MERN.git",
+      image: "alextaweke/images/projects/student.jfif",
+    },
+    {
+      title: "Pension System",
+      description:
+        "A system to manage pensions, contributions, and beneficiary details securely.",
+      link: "https://alextaweke-pension.com",
+      github: "https://github.com/alextaweke/pensition-MERN.git",
+      image: "alextaweke/images/projects/pension.jpg",
+    },
+    {
+      title: "Ecommerce-React",
+      description:
+        "A React-based e-commerce frontend with dynamic product listings and shopping cart.",
+      link: "https://alextaweke-ecommerce-react.com",
+      github: "https://github.com/alextaweke/ecommerce-react.git",
+      image: "alextaweke/images/projects/ecommerce.png",
+    },
+    {
+      title: "Application Form",
+      description:
+        "An interactive application form with validations and data submission features.",
+      link: "https://alextaweke-applicationform.com",
+      github: "https://github.com/alextaweke/ApplicationForm.git",
+      image: "alextaweke/images/projects/application.avif",
+    },
+  ],
+  ongoingProjects: [
+    {
+      title: "Urban Land Management System",
+      description:
+        "A React + Python/Django system to manage land records and payments.",
+      link: "https://alextaweke-urbanland.com",
+      github: "https://github.com/alextaweke/urban-land-management",
+      image: "alextaweke/images/projects/land.jpg",
+    },
+  ],
+};
