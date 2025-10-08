@@ -27,7 +27,7 @@ export const portfolioData = {
         "A personal portfolio built with React + TypeScript + Tailwind.",
       link: "https://alextaweke.com",
       github: "https://github.com/alextaweke/web-developer-portfolio.git",
-      image: "alextaweke/images/projects/alexo.png",
+      image: "images/projects/alexo.png",
     },
     {
       title: "Internet Cafe Management System",
@@ -35,7 +35,7 @@ export const portfolioData = {
         "Manage users, session time, and billing in an internet cafe environment.",
       link: "https://alextaweke-internetcafe.com",
       github: "https://github.com/alextaweke/Internet-Cafe.git",
-      image: "alextaweke/images/projects/internet.jfif",
+      image: "images/projects/internet.jfif",
     },
     {
       title: "Student Management System",
@@ -43,7 +43,7 @@ export const portfolioData = {
         "Manage student records, attendance, and academic performance efficiently.",
       link: "https://alextaweke-students.com",
       github: "https://github.com/alextaweke/Student-MERN.git",
-      image: "alextaweke/images/projects/student.jfif",
+      image: "images/projects/student.jfif",
     },
     {
       title: "Pension System",
@@ -51,7 +51,7 @@ export const portfolioData = {
         "A system to manage pensions, contributions, and beneficiary details securely.",
       link: "https://alextaweke-pension.com",
       github: "https://github.com/alextaweke/pensition-MERN.git",
-      image: "alextaweke/images/projects/pension.jpg",
+      image: "images/projects/pension.jpg",
     },
     {
       title: "Ecommerce-React",
@@ -59,7 +59,7 @@ export const portfolioData = {
         "A React-based e-commerce frontend with dynamic product listings and shopping cart.",
       link: "https://alextaweke-ecommerce-react.com",
       github: "https://github.com/alextaweke/ecommerce-react.git",
-      image: "alextaweke/images/projects/ecommerce.png",
+      image: "images/projects/ecommerce.png",
     },
     {
       title: "Application Form",
@@ -67,7 +67,7 @@ export const portfolioData = {
         "An interactive application form with validations and data submission features.",
       link: "https://alextaweke-applicationform.com",
       github: "https://github.com/alextaweke/ApplicationForm.git",
-      image: "alextaweke/images/projects/application.avif",
+      image: "images/projects/application.avif",
     },
   ],
   ongoingProjects: [
@@ -77,7 +77,7 @@ export const portfolioData = {
         "A React + Python/Django system to manage land records and payments.",
       link: "https://alextaweke-urbanland.com",
       github: "https://github.com/alextaweke/urban-land-management",
-      image: "alextaweke/images/projects/land.jpg",
+      image: "images/projects/land.jpg",
     },
   ],
 };

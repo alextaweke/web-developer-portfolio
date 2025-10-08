@@ -180,7 +180,7 @@ const Hero: React.FC<HeroProps> = ({ data }) => (
           {/* Larger Image Container */}
           <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20 group-hover:border-white/40 transition-all duration-500">
             <img
-              src="/alextaweke/images/alex.jpg"
+              src="images/alex.png"
               alt="Alemayehu Taweke - Full Stack Developer"
               className="w-96 h-[32rem] lg:w-[28rem] lg:h-[36rem] xl:w-[32rem] xl:h-[40rem] object-cover object-top group-hover:scale-105 transition-transform duration-500"
             />
