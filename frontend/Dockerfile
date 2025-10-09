@@ -2,16 +2,23 @@
 FROM node:18-alpine AS builder
 WORKDIR /app
 
+# Install dependencies
 COPY package*.json ./
 RUN npm install
 
+# Copy source code
 COPY . .
+
+# Ensure node_modules/.bin is executable
+RUN chmod -R +x node_modules/.bin
+
+# Build Vite app
 RUN npm run build
 
 # --- Stage 2: Serve with Nginx ---
 FROM nginx:alpine
 
-# Copy build output from the first stage
+# Copy build output
 COPY --from=builder /app/dist /usr/share/nginx/html
 
 # Copy custom Nginx config
