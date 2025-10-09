@@ -1,3 +1,4 @@
+// src/data/portfolioData.ts
 export const portfolioData = {
   name: "Alemayehu Taweke",
   title: "Full-Stack Web Developer",
@@ -6,20 +7,67 @@ export const portfolioData = {
   github: "https://github.com/alextaweke",
   linkedin: "https://linkedin.com/in/alemayehu-taweke-6b6a6331b",
   email: "alextaweke@gmail.com",
+
   skills: [
     {
-      name: "Frontend & Backend",
-      skills: ["React", "TypeScript", "NestJS", "Django", "Express", "Node.js"],
+      name: "Programming Languages",
+      skills: ["JavaScript", "TypeScript", "Python", "Java", "C++", "Go"],
       icon: "💻",
       color: "blue",
     },
     {
-      name: "Databases & Tools",
-      skills: ["PostgreSQL", "Tailwind CSS", "Git", "Docker", "AWS"],
-      icon: "🛠️",
+      name: "Frontend Technologies",
+      skills: [
+        "React",
+        "Next.js",
+        "HTML5",
+        "CSS3",
+        "Tailwind CSS",
+        "Bootstrap",
+      ],
+      icon: "🎨",
+      color: "purple",
+    },
+    {
+      name: "Backend Technologies",
+      skills: [
+        "Node.js",
+        "Express",
+        "NestJS",
+        "Django",
+        "REST APIs",
+        "GraphQL",
+      ],
+      icon: "⚙️",
       color: "green",
     },
+    {
+      name: "Databases",
+      skills: ["PostgreSQL", "MongoDB", "MySQL", "Redis", "SQLite", "Firebase"],
+      icon: "🗄️",
+      color: "yellow",
+    },
+    {
+      name: "Tools & Platforms",
+      skills: ["Git", "Docker", "AWS", "CI/CD", "Kubernetes", "Vercel"],
+      icon: "🛠️",
+      color: "red",
+    },
+    {
+      name: "Other Skills",
+      skills: [
+        "Agile/Scrum",
+        "Problem Solving",
+        "Team Leadership",
+        "Code Review",
+        "System Design",
+        "Testing",
+      ],
+      icon: "🚀",
+      color: "purple",
+    },
   ],
+
   completedProjects: [
     {
       title: "Portfolio Website",
@@ -70,6 +118,7 @@ export const portfolioData = {
       image: "images/projects/application.avif",
     },
   ],
+
   ongoingProjects: [
     {
       title: "Urban Land Management System",
